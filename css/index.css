@@ -1,0 +1,96 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #1d1d1d;
+}
+
+nav {
+  background-color: #0f0f0f;
+  height: 70px;
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 22px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #0f0f0f;
+  background-color: #0f0f0f;
+  color: white;
+  padding: 9px;
+}
+
+button:hover {
+  background-color: #1d1d1d;
+  border-style: solid;
+  border-color: #1d1d1d;
+}
+
+/* contrast button */
+
+.contrast {
+  margin-left: 1680px;
+}
+
+.contrast:hover {
+  background-color: #0f0f0f;
+  color: #969494;
+  border: 3px solid #0f0f0f;
+}
+
+.row1 {
+  /**/
+  margin: 20px;
+}
+
+.card {
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: #969494;
+  margin: 20px;
+  height: 330px;
+  width: 275px;
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: #d8d8d8;
+}
+
+img {
+  object-fit: cover;
+  height: 270px;
+  width: 250px;
+}
+
+.whitePage {
+  background-color: #fafafa;
+}
+
+.whiteNav {
+  background-color: #e7e7e7;
+  box-shadow: 10px 10px 5px #c5c5c5;
+}
+
+.blackContrast {
+  color: black;
+  background-color: #e7e7e7;
+  border: 3px solid #e7e7e7;
+}
+
+.blackContrast:hover {
+  background-color: #e7e7e7;
+  border: 3px solid #e7e7e7;
+}
+
+.navBttn {
+  color: black;
+  background-color: #e7e7e7;
+  border: 3px solid #e7e7e7;
+}
+
+.navBttn:hover {
+  background-color: #f5f3f3;
+  border: 3px solid #f5f3f3;
+}

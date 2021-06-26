@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/signin.css" />
+    <link rel="icon" href="joystick.png" />
+    <title>Sign in</title>
+  </head>
+  <body class="sBody">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+    <!--<script src="signin.js"></script>-->
+    <button class="contrast" onclick="swapMode()" id="con">☀</button>
+    <center>
+      <form>
+        <input class="txtbox" id="first" type="email" placeholder="email" />
+        <input
+          class="txtbox"
+          id="second"
+          type="password"
+          placeholder="password"
+        />
+        <a style="text-decoration: none" href="#"
+          ><input
+            class="btn"
+            onclick="signIn()"
+            id="third"
+            type="button"
+            value="Sign in"
+        /></a>
+      </form>
+    </center>
+  </body>
+</html>
