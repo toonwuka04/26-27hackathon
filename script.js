@@ -7,7 +7,8 @@ window.addEventListener('load', () => {
     var cSoon = $(".soon");
     var accHdr = $(".hdr");
     var cardBtn = $(".card-btn");
-    var accInfo = $(".account-info")
+    var accInfo = $(".account-info");
+    var sHdr = $(".hdr1");
 
     function swapMode() {
         body.toggleClass("whitePage");
@@ -20,6 +21,7 @@ window.addEventListener('load', () => {
         console.log("mode swaped");
         cSoon.toggleClass("soonBlack");
         accInfo.toggleClass("accInfoB");
+        sHdr.toggleClass("hdrBlack");
     }
     contrast.on("click", swapMode);
     
