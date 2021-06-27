@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/account.css" />
-    <link rel="icon" href="joystick.png" />
+    <link rel="icon" href="img/joystick.png" />
     <title>Your Account</title>
   </head>
   <body class="body">
@@ -18,5 +18,24 @@
       <a href="pro.html"><button class="bttn">Pro+</button></a>
       <button onclick="swapMode()" class="contrast">☀</button>
     </nav>
+    <h1 class="hdr">My Account</h1>
+    <div class="rowOne">
+    
+    <div class="image-upload">
+      <label for="file-input">
+        <img id="output" class="pfp" src="img/imageN.png" alt="pfp" />
+      </label>
+
+      <input id="file-input" type="file" onchange="loadFile(event)" />
+    </div>
+
+    <div class="account-info"> 
+      <h1>Welcome Test User</h1>
+      </br></br>
+      <li>Email: test@email.com</li>
+      <li>User: Test</li>
+    <div> 
+    </div>
+    <!---->
   </body>
 </html>

@@ -44,20 +44,6 @@ button:hover {
   margin: 20px;
 }
 
-.card {
-  border: 1px solid white;
-  border-radius: 8px;
-  background-color: #969494;
-  margin: 20px;
-  height: 330px;
-  width: 275px;
-  object-fit: cover;
-}
-
-.card-body {
-  background-color: #d8d8d8;
-}
-
 img {
   object-fit: cover;
   height: 270px;
@@ -92,5 +78,53 @@ img {
 
 .navBttn:hover {
   background-color: #f5f3f3;
-  border: 3px solid #f5f3f3;
+  border: 3px solid #f3f3f5;
+}
+
+.card {
+  width: 23rem;
+  height: 30rem;
+  background-color: rgb(51, 167, 40);
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Cambria";
+  margin: 40px;
+}
+.row1 {
+  display: flex;
+  justify-content: center;
+}
+
+.card-info {
+  color: white;
+  padding: 10px;
+}
+p {
+  font-size: 18px;
+}
+
+.card-img {
+  width: 23rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-btn {
+  background-color: rgb(0, 0, 0);
+  padding: 13px 25px 13px 25px;
+  border-radius: 15px;
+}
+
+.cardBtnWhite {
+  color: black;
+  background-color: #e7e7e7;
+  border: 3px solid #e7e7e7;
+}
+.cardBtnWhite:hover {
+  background-color: #f5f3f3;
+  border: 3px solid #f3f3f5;
+}
+
+a {
+  text-decoration: none;
 }

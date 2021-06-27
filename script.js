@@ -3,21 +3,33 @@ window.addEventListener('load', () => {
     var body = $("body");
     var nav = $("nav");
     var bttn = $(".bttn");
-    var sBody = $(".sBody")
+    var sBody = $(".sBody");
     var cSoon = $(".soon");
+    var accHdr = $(".hdr");
+    var cardBtn = $(".card-btn");
+    var accInfo = $(".account-info")
+
     function swapMode() {
         body.toggleClass("whitePage");
         nav.toggleClass("whiteNav");
         contrast.toggleClass("blackContrast");
         bttn.toggleClass("navBttn");
-        sBody.toggleClass("bodyContrast")
+        sBody.toggleClass("bodyContrast");
+        accHdr.toggleClass("hdrBlack");
+        cardBtn.toggleClass("cardBtnWhite");
         console.log("mode swaped");
         cSoon.toggleClass("soonBlack");
+        accInfo.toggleClass("accInfoB");
     }
     contrast.on("click", swapMode);
     
     
 });
+
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
 
 
 var firebaseConfig = {
@@ -28,6 +40,8 @@ var firebaseConfig = {
     messagingSenderId: "854470042025",
     appId: "1:854470042025:web:d029e1820910f56aae24b8",
   };
+
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -36,16 +50,4 @@ var pass = "secure";
 
 
 const auth = firebase.auth();
-function signIn() {
-    
-  console.log(auth)
-  var email = "test@gmail.com";
-  var pass = "secure";
-  auth.signInWithEmailAndPassword(email, pass)
-  .then(<h1>hi</h1>)
-  .catch(error => {
-   <p>error</p>
-  });
-  const promise = auth.signInWithEmailandPassowrd(email, pass);
-  alert("Signed in "+ email);
-}
+
